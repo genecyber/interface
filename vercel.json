@@ -19,7 +19,7 @@
         "dest": "server/index.js"
       },
       {
-        "src": "/api/hi",
+        "src": "/api/hi", 
         "dest": "server/index.js"
       },      
       {
