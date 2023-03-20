@@ -36,6 +36,7 @@ function App() {
       localStorage.setItem(hash, JSON.stringify(importedHistory));
       const newSessionHashes = [...storedSessionHashes.filter(item=>{return item != hash}), hash]
       localStorage.setItem('sessionHashes', JSON.stringify(newSessionHashes));
+      window.location.href = `${window.location.origin}#${e.target.value}`
     } catch(err){
       console.log(err)
     }
