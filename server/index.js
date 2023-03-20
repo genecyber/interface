@@ -12,6 +12,10 @@ app.use(express.json());
 // Serve the React app
 app.use(express.static(path.join(__dirname, '../build')));
 
+app.get('/api/hi', (req, res)=>{
+  res.json({msg: "hi"})
+})
+
 app.post('/api/chatgpt', async (req, res) => {
   const { prompt, history } = req.body;
 
