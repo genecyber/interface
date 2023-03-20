@@ -9,7 +9,7 @@
         "src": "server/index.js",
         "use": "@vercel/node"
       },{
-        "src": "public/**",
+        "src": "build/**",
         "use": "@vercel/static"
       }
     ],
@@ -20,7 +20,7 @@
       },
       {
         "src": "/(.+)",
-        "dest": "public/$1"
+        "dest": "build/$1"
       },
       {
         "src": "/",
