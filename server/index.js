@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '../build')));
 
 app.get('/api/hi', (req, res)=>{
-  res.json({msg: "hi there"})
+  res.json({msg: "hi there u"})
 })
 
 app.post('/api/chatgpt', async (req, res) => {
